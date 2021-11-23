@@ -16,6 +16,10 @@ public class Test_Maximum{
 		call.checkFloat(777.1f, 889.99f, 33.7f);		// test case 2				
 		call.checkFloat(77.f, 445.f, 779.f);			// test case 3
 		
+		System.out.println("\n\n\n");
 		
+		call.checkString("Bananaaaaa", "Apple", "Melon");	// test case 1
+		call.checkString("BMW", "MERCEDESSSSS", "VOLVO");	// test case 2
+		call.checkString("ASIA", "AFRICA", "ANTARCTICAAAAA");// test case 3
 	}
 } 
