@@ -2,7 +2,52 @@ package com.genric;
 
 public class Find_Max_Genrics {
 
-	public void checkIntegers(Integer num1, Integer num2, Integer num3) {
+	public <E extends Comparable<E> > E displayMax(E var1, E var2, E var3) {
+		
+		E max;
+		if(var1.compareTo(var2) > 0 && var1.compareTo(var3) > 0) {
+			max = var1;
+			System.out.println(max+" is the max");
+		}
+		else if(var2.compareTo(var1) > 0 && var2.compareTo(var3) > 0) {
+			max = var2;
+			System.out.println(max+" is the max");
+		}
+		else{
+			max = var3;
+			System.out.println(max+" is the max");
+		}
+		return max;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*public void checkIntegers(Integer num1, Integer num2, Integer num3) {
 		
 		if(num1.compareTo(num2) >=0 && num1.compareTo(num3) >=0 ) {
 			System.out.println(+num1+" is the largest of all");
@@ -38,6 +83,6 @@ public class Find_Max_Genrics {
 		}
 		else
 			System.out.println(" Third is largest");
-	}
+	}*/
 
 }
