@@ -1,8 +1,21 @@
 package com.genric;
 
-public class Find_Max_Genrics {
+public class Find_Max_Genrics <E extends Comparable<E>> {
+	
+	private E var1;
+	private E var2;
+	private E var3;
+	
+	public  Find_Max_Genrics(E var1, E var2, E var3) {
+		
+		this.var1 = var1;
+		this.var2 = var2;
+		this.var3 = var3;
+				
+	}
+	
 
-	public <E extends Comparable<E> > E displayMax(E var1, E var2, E var3) {
+	public static <E extends Comparable<E> > E testMaximum(E var1, E var2, E var3) {
 		
 		E max;
 		if(var1.compareTo(var2) > 0 && var1.compareTo(var3) > 0) {
